@@ -70,7 +70,8 @@ if not ensure_analysis_data():
 df = pd.read_csv(PROVINCE_COMPARISON_PATH)
 
 #Rest of the dashboard code 
-
+st.title("Rental Market Analysis Dashboard")
+st.dataframe(df)
 
 # Custom CSS
 def add_custom_css():
