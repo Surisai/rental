@@ -50,14 +50,23 @@ def ensure_analysis_data():
     if st.button("▶ Run Analysis Pipeline"):
         with st.spinner("Running analysis... this may take a moment"):
             try:
-                subprocess.run(
+                result = subprocess.run(
                     ["python", str(ANALYSIS_SCRIPT)],
-                    check=True
+                    capture_output=True,
+                    text=True
                 )
+
+                if result.returncode != 0:
+                    st.error("❌ Analysis script failed to run.")
+                    st.markdown("**Error details:**")
+                    st.code(result.stderr)
+                    st.stop()
+
                 st.success("✅ Analysis completed successfully!")
                 st.rerun()
+
             except Exception as e:
-                st.error("❌ Analysis failed.")
+                st.error("❌ Analysis failed unexpectedly.")
                 st.exception(e)
 
     return False
