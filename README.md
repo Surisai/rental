@@ -98,7 +98,7 @@ pip install -r requirements.txt
 ### 3.  Run Data Pipeline
 ```bash
 # Step 1: Clean the raw data
-python3 scripts/data_cleaning_pipeline.py
+python3 scripts/data_cleanning_pipeline.py
 
 # Step 2: Run province analysis
 python3 scripts/province_analysis.py
