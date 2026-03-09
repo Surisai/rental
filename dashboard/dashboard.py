@@ -11,6 +11,14 @@ import numpy as np
 import sys 
 from datetime import datetime
 
+# Page configuration
+st.set_page_config(
+    page_title="Canadian Rental Analysis",
+    page_icon="🏠",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 st.write("Python version:", sys.version) #Temporary
 #Configuration add centralize all paths 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -21,13 +29,6 @@ PROVINCE_COMPARISON_PATH = (
 
 
 ANALYSIS_SCRIPT = BASE_DIR /"scripts/province_analysis.py"
-# Page configuration
-st.set_page_config(
-    page_title="Canadian Rental Analysis",
-    page_icon="🏠",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 #status handler 
 def ensure_analysis_data():
     """
