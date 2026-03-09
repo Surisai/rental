@@ -54,7 +54,7 @@ def ensure_analysis_data():
         with st.spinner("Running analysis... this may take a moment"):
             try:
                 result = subprocess.run(
-                    ["python", str(ANALYSIS_SCRIPT)],
+                    [sys.executable, str(ANALYSIS_SCRIPT)],
                     capture_output=True,
                     text=True
                 )
