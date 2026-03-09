@@ -1,22 +1,20 @@
-# # Core Data Science
-# pandas>=1.5
-# numpy>=1.23
-# matplotlib>=3.6
-# seaborn>=0.12
-# plotly>=5.13
+# Core Data Science
+pandas>=1.5
+numpy>=1.23
+matplotlib>=3.6
+seaborn>=0.12
+plotly>=5.13
 
-# # Dashboard
-# streamlit>=1.24
-# streamlit-aggrid>=0.3.4
-# streamlit-option-menu>=0.3.6
+# Dashboard
+streamlit>=1.24
 
-# # Utilities
-# scipy>=1.9
-# scikit-learn>=1.2
-# openpyxl>=3.1
+# Utilities
+scipy>=1.9
+scikit-learn>=1.2
+openpyxl>=3.1
 
-# # Mapping (only if actually used)
-# folium>=0.14
+# Mapping (only if actually used)
+folium>=0.14
 
 # Core Data Science - Python 3.13 compatible versions
 pandas==2.2.0
