@@ -31,54 +31,7 @@ This project provides a comprehensive analysis of Canada's rental housing market
 4. **Alberta** - Most listings available, moderate pricing
 5. **Saskatchewan** - Most pet-friendly province
 
-## 🏗️ Project Structure
-```bash
-Rental-Housing-Canada-Analysis/
-├── README.md # This file
-├── requirements.txt # Python dependencies
-├── data/ # Data directory
-│ ├── raw/ # Original data
-│ │ └── rentals.csv # 25,000+ raw listings
-│ └── processed/ # Cleaned data
-│ └── rentals_clean.csv # Cleaned dataset
-├── scripts/ # Analysis scripts
-│ ├── data_cleaning_pipeline.py # Data cleaning pipeline
-│ └── province_analysis.py # Province-level analysis
-├── outputs/ # Analysis outputs
-│ └── province_analysis/
-│ ├── reports/ # Text reports
-│ │ └── province_analysis_report.txt
-│ ├── data/ # CSV data files
-│ │ ├── province_comparison.csv
-│ │ ├── province_detailed_stats.csv
-│ │ └── provinces/ # Individual province data
-│ │ ├── alberta_rentals.csv
-│ │ ├── british_columbia_rentals.csv
-│ │ └── ...
-│ └── visualizations/ # PNG chart files
-│ ├── summary_charts/ # Comparison charts
-│ │ ├── province_analysis_summary.png
-│ │ ├── market_size_vs_price.png
-│ │ └── outlier_analysis.png
-│ └── province_distributions/ # Individual province charts
-│ ├── alberta_distribution.png
-│ ├── british_columbia_distribution.png
-│ └── ...
-├── dashboard/ # Streamlit dashboard
-│ ├── dashboard.py # Main dashboard app
-│ ├── components/ # Dashboard components
-│ │ ├── overview.py # Overview tab
-│ │ ├── province_comparison.py # Province comparison tab
-│ │ ├── province_detail.py # Province detail tab
-│ │ ├── market_insights.py # Insights tab
-│ │ └── data_explorer.py # Data explorer tab
-│ └── utils/ # Utility functions
-│ ├── data_loader.py # Data loading utilities
-│ ├── visualizations.py # Plotting functions
-│ └── filters.py # Filtering utilities
-└── logs/ # Log files
-└── data_cleaning_log.txt # Cleaning process log
-```
+
 ## 🚀 Getting Started
 
 
@@ -113,4 +66,3 @@ streamlit run dashboard/dashboard.py
 
 For demonstration purposes only.
 Full dataset (25,544 rows) available upon request.
-EOF
